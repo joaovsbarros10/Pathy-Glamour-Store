@@ -1,0 +1,390 @@
+* {
+
+    margin: 0%;
+    box-sizing: border-box;
+}
+
+body {
+
+    display: flex;
+    flex-direction: row;
+    gap: 17vw;
+    background-image: url(Background.png);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    flex-wrap: wrap;
+}
+
+
+.container-left {
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+
+    height: 100vh;
+    padding-left: 5vw;
+    padding-right: 5vw;
+
+    border-top-right-radius: 3vh;
+    border-bottom-right-radius: 3vh;
+    background: linear-gradient(to top, #6f2438, #b81c48);
+    max-width: fit-content;
+    max-width: 100%;
+
+}
+
+.content-container-left {
+
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+    gap: 10vh;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-family: poppins, sans-serif;
+
+}
+
+#acesse-sua-conta {
+
+    font-family: poppins, sans-serif;
+    font-weight: 200;
+    letter-spacing: 0.4vh;
+    font-size: 2vh;
+    position: relative;
+    cursor: pointer;
+    display: inline-block;
+
+}
+
+#acesse-sua-conta::after {
+
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -5px; 
+    width: 0%;
+    height: 2px;
+    background-color: #ffffff;
+    transition: width 0.3s ease-in-out;
+
+}
+
+#acesse-sua-conta:hover::after {
+
+    width: 100%;
+}
+
+.bem-vindo {
+
+    font-family: poppins, sans-serif;
+    font-weight: 500;
+    font-size: 3vh;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    cursor: pointer;
+    position: relative;
+    display: inline-block; 
+
+}
+
+.bem-vindo::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -5px; 
+    width: 0%;
+    height: 2px;
+    background-color: #ffffff;
+    transition: width 0.3s ease-in-out;
+  }
+
+.bem-vindo:hover::after {
+    width: 100%;
+}
+
+.btn-1 {
+
+    padding: 2vh 13vh;
+    border-radius: 5vh;
+    border: 1px solid rgb(255, 255, 255);
+    font-size: 2vh;
+    font-family: poppins, sans-serif;
+    font-weight: bold;
+    cursor: pointer;
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+    background: none;
+    color: white;
+}
+
+.btn-1:hover {
+
+    border-color: rgb(255, 255, 255);
+    box-shadow: 0px 0px 10px rgba(255, 255, 255, 0.3);
+
+}
+
+
+.text {
+    
+    margin-top: 10vh;
+    
+}
+
+.title {
+    
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 2vh;
+    color: #b81c48;
+    
+}
+
+#title1 {
+    
+    font-family: poppins, sans-serif;
+    font-weight: 600;
+    letter-spacing: 0.3vh;
+}
+
+#title2 {
+    
+    font-family: poppins, sans-serif;
+    font-weight: 400;
+    letter-spacing: 0.3vh;
+    color: rgb(128, 128, 128);
+}
+
+form {
+    
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    background: linear-gradient(to right, #7a2139, #b81c48);
+    padding: 40px;
+    border-radius: 20px;
+    color: white;
+    font-family: poppins, sans-serif;
+    max-width: 400px;
+    width: 100%;
+
+}
+
+input {
+
+    padding: 10px 30px;
+    border-radius: 20px;
+    border: 1px solid rgb(255, 255, 255);
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+    outline: none;
+    
+}
+
+
+input:hover {
+
+    border-color: rgb(255, 255, 255);
+    box-shadow: 0px 0px 5px rgb(255, 255, 255);
+}
+
+input:focus {
+    border-color: rgb(255, 255, 255); 
+    box-shadow: 0 0 5px rgba(255, 255, 255, 0.5); 
+}
+
+.right-infos {
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 40px;
+}
+
+#btn-2 {
+
+    margin-top: 30px;
+    padding: 10px;
+    border-radius: 20px;
+    outline: none;
+    border: 1px solid rgb(255, 255, 255);
+    cursor: pointer;
+    transition: border-color 0.4s ease, box-shadow 0.4s ease;
+    font-family: poppins, sans-serif;
+    font-weight: 600;
+    color: rgb(255, 255, 255);
+    background: none;
+}
+
+#btn-2:hover {
+
+    border-color: rgb(255, 255, 255);
+    box-shadow: 0px 0px 5px rgb(255, 255, 255);
+
+}
+
+.right-infos {
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: -20vh;
+    margin-left: -10vh;
+    flex-wrap: wrap;
+}
+.logo {
+
+    width: 20vh;
+    position: absolute;
+    top: 5vh;
+    left: 8.5vw;
+
+
+
+}
+
+.span1 {
+
+    cursor: pointer;
+    position: relative;
+}
+
+.span1::after {
+
+    content:" ";
+    width: 0%;
+    height: 4px;
+    background-color: black;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+
+
+
+}
+
+@media (max-width: 1366px) {
+ 
+    .container-left {
+        max-width: 100%;
+       
+    }
+
+    .right-infos {
+        
+        margin-top: 0; 
+        margin-left: -200; 
+        
+    }
+
+
+    .title h4 {
+        font-size: 2vh; 
+    }
+
+    input {
+        padding: 10px; 
+    }
+
+    .btn-1, #btn-2 {
+        padding: 10px 50px; 
+        font-size: 15px; 
+    }
+
+
+}
+
+@media (max-width: 1024px) {
+    body {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .container-left, .right-infos {
+        max-width: 90%;
+        margin: 0 auto;
+        padding: 20px;
+    }
+
+    .container-left {
+        height: auto;
+        border-radius: 20px;
+    }
+
+    .logo {
+        position: static;
+        margin-bottom: 20px;
+    }
+
+    .right-infos {
+        margin: 0;
+    }
+}
+
+@media (max-width: 768px) {
+
+    .btn-1, #btn-2 {
+        width: 100%;
+        padding: 15px;
+        font-size: 14px;
+    }
+
+    form {
+        padding: 20px;
+    }
+
+    input {
+        padding: 10px;
+        font-size: 14px;
+    }
+
+    .bem-vindo {
+        font-size: 2.5vh;
+    }
+
+    #acesse-sua-conta {
+        font-size: 1.8vh;
+    }
+
+    .title h4, #title2 {
+        font-size: 2vh;
+    }
+}
+
+@media (max-width: 480px) {
+    .container-left, .right-infos {
+        padding: 10px;
+    }
+
+    .logo {
+        width: 15vh;
+    }
+
+    .title h1, #title1 {
+        font-size: 2.5vh;
+    }
+
+    #title2 {
+        font-size: 1.5vh;
+    }
+
+    form {
+        padding: 15px;
+    }
+
+    .btn-1, #btn-2 {
+        font-size: 12px;
+    }
+
+    input {
+        font-size: 12px;
+    }
+}
