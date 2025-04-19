@@ -32,9 +32,9 @@ body {
     border-top-right-radius: 3vh;
     border-bottom-right-radius: 3vh;
     background: linear-gradient(to top, #6f2438, #b81c48);
-    max-width: fit-content;
+    width: 100%;
     max-width: 100%;
-
+    
 }
 
 .content-container-left {
@@ -47,6 +47,7 @@ body {
     align-items: center;
     color: white;
     font-family: poppins, sans-serif;
+    margin-top: 150px;
 
 }
 
@@ -200,13 +201,15 @@ input:focus {
     box-shadow: 0 0 5px rgba(255, 255, 255, 0.5); 
 }
 
-.right-infos {
+
+.container-right {
 
     display: flex;
-    flex-direction: column;
     align-items: center;
     justify-content: center;
-    gap: 40px;
+    flex-direction: column;
+    width: 100%;
+    gap: 30px;
 }
 
 #btn-2 {
@@ -245,7 +248,7 @@ input:focus {
     width: 20vh;
     position: absolute;
     top: 5vh;
-    left: 8.5vw;
+    left: 9vw;
 
 
 
@@ -266,8 +269,34 @@ input:focus {
     position: absolute;
     bottom: 0;
     left: 0;
+}
 
+.logos-redes {
 
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+
+}
+
+.logo-rede {
+
+    height: 5vh;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+}
+
+.logo-rede:hover {
+
+    transform: scale(1.1);
+
+}
+
+html {
+
+    box-sizing: border-box;
 
 }
 
@@ -305,10 +334,13 @@ input:focus {
 @media (max-width: 1024px) {
     body {
         flex-direction: column;
-        align-items: center;
+        align-items: stretch;
+        margin: 0;
+        gap: 0;
+        margin-bottom: 100px;
     }
 
-    .container-left, .right-infos {
+    .container-left {
         max-width: 90%;
         margin: 0 auto;
         padding: 20px;
@@ -327,10 +359,28 @@ input:focus {
     .right-infos {
         margin: 0;
     }
+
+
 }
 
 @media (max-width: 768px) {
 
+    body {
+
+        display: flex;
+        flex-direction: column;
+        align-items: stretch;
+        gap: 0;
+        background-image: url(Background.png);
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        background-size: cover;
+        flex-wrap: wrap;
+        padding: 0;
+        margin: 0;
+       
+
+    }
     .btn-1, #btn-2 {
         width: 100%;
         padding: 15px;
@@ -339,6 +389,29 @@ input:focus {
 
     form {
         padding: 20px;
+    }
+    .container-left {
+
+    width: 100%;
+    max-width: 100%;
+    border-radius: 0;
+    border-bottom-left-radius: 3vh;
+    border-bottom-right-radius: 3vh;
+
+    }
+
+    .content-container-left {
+
+        margin-top: 0%;
+
+    }
+
+    .container-right {
+
+        position: absolute;
+        top: 80vh;
+        left: 1vw;
+
     }
 
     input {
@@ -362,6 +435,7 @@ input:focus {
 @media (max-width: 480px) {
     .container-left, .right-infos {
         padding: 10px;
+        gap: 20px;
     }
 
     .logo {
