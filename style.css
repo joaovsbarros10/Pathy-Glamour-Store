@@ -249,7 +249,14 @@ input:focus {
     position: absolute;
     top: 5vh;
     left: 9vw;
+    cursor: pointer;
+    transition: transform 0.4s ease;
+}
 
+
+.logo:hover {
+
+    transform: scale(1.05);
 
 
 }
