@@ -98,7 +98,20 @@
                 </div>
 
             </main>
-
+            
+            <script>
+            // Verifica se há um usuário logado
+            const user = JSON.parse(localStorage.getItem('loggedUser'));
+        
+            if (!user) {
+              // Se não estiver logado, redireciona para a página de login
+              window.location.href = 'login.html';
+            } else {
+              // Exibe um prompt com a mensagem personalizada
+              alert(`Bem-vindo, ${user.username}! Você entrou com sucesso.`);
+        
+            }
+          </script>
 <body>
     
 </html>
